@@ -11,7 +11,7 @@ Antes de executar este agente, você deve ter o seguinte configurado:
 1.  **Um Projeto no Google Cloud:** Garanta que você tenha um projeto no Google Cloud criado e as permissões necessárias para habilitar APIs e criar credenciais OAuth.
 2.  **Tela de Consentimento OAuth 2.0:** Configure a tela de consentimento OAuth para o seu projeto no Console do Google Cloud.
 3.  **ID do Cliente OAuth 2.0:** Crie um ID do Cliente OAuth 2.0 para uma "Aplicação Web". Você precisará do **Client ID** e do **Client Secret** para a configuração do ambiente.
-4.  **Criar um App no AgentSpace:** Crie um aplicativo no AgentSpace (Vertex AI Search and Conversation). O nome deste aplicativo deve ser fornecido na variável `APP_NAME` no arquivo `.env`.
+4.  **Criar um App no AgentSpace:** Crie um aplicativo no AgentSpace (Vertex AI Search and Conversation). O ID deste aplicativo deve ser fornecido na variável `APP_NAME` no arquivo `.env`.
 
 ## Tutorial: Criando Credenciais OAuth 2.0
 
@@ -73,7 +73,7 @@ Siga estes passos para configurar o projeto localmente.
     MODEL="gemini-2.5-flash"                            # Modelo de linguagem a ser usado pelo agente.
     AUTH_ID="seu-id-de-autenticacao"                    # Um ID que você deve definir para identificar a configuração do OAuth.
     APP_REGION="global"                                 # Região do seu aplicativo no AgentSpace (geralmente "global").
-    APP_NAME="seu-nome-de-app"                          # Nome do seu aplicativo criado no AgentSpace.
+    APP_NAME="seu-nome-de-app"                          # ID do seu aplicativo criado no AgentSpace.
     OAUTH_CLIENT_ID="seu-id-de-cliente-oauth"           # Client ID obtido no Passo 4 do tutorial.
     OAUTH_CLIENT_SECRET="seu-segredo-de-cliente-oauth"  # Client Secret obtido no Passo 4 do tutorial.
     ```
